@@ -14,8 +14,12 @@ WISE Website/
 │   └── contact.js      # Contact form handling
 └── pages/
     ├── chapters.html   # Chapters directory page
+    |__ What are WISE, WISE beyond and all called # WISE Beyond, WISE Foundation, can I get more details
     ├── conferences.html # Past conferences and upcoming events
-    └── contact.html    # Contact form and chapter leadership directory
+    └── contact.html    # Contact form and chapter leadership directory, also social media handles
+    |--- Advisory Board and Dr. T info # thinking of storing every years board
+    |--- Newsletters # store all the edition of newsletter
+
 ```
 
 ## 🎯 Features
