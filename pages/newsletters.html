@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletters - WISE</title>
+    <link rel="icon" href="../images/WISE_student_logo-color.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/WISE_student_logo-color.jpg" alt="WISE Logo" class="logo-img">
+                <p class="tagline">Women Impacting Supply Chain Excellence</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="chapters.html">Chapters</a></li>
+                <li><a href="conferences.html">Conferences</a></li>
+                <li><a href="advisory-board.html">Advisory Board</a></li>
+                <li><a href="newsletters.html" class="active">Newsletters</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="about">
+            <h2>WISE Newsletters</h2>
+            <p>Stay informed about WISE events, chapter updates, industry insights, and career development opportunities. Subscribe to our newsletters and never miss important news from our community.</p>
+        </section>
+
+        <section class="newsletter-subscribe">
+            <h2>Subscribe to Our Newsletter</h2>
+            <div class="subscribe-box">
+                <p>Get monthly updates delivered straight to your inbox!</p>
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" name="frequency" value="weekly"> Weekly Updates
+                        </label>
+                        <label>
+                            <input type="checkbox" name="frequency" value="monthly"> Monthly Newsletter
+                        </label>
+                        <label>
+                            <input type="checkbox" name="frequency" value="events"> Events & Announcements
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <div id="subscribeMessage"></div>
+            </div>
+        </section>
+
+        <section class="newsletters-section">
+            <h2>Latest Newsletters</h2>
+            <div class="newsletter-grid">
+                <div class="newsletter-card">
+                    <div class="newsletter-date">March 2026</div>
+                    <h3>WISE Student Advisory Board Introduction</h3>
+                    <p>Meet our 2026 Advisory Board members and learn about their passion for advancing women in supply chain excellence. Featuring profiles and insights from our distinguished leaders.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+
+                <div class="newsletter-card">
+                    <div class="newsletter-date">February 2026</div>
+                    <h3>Chapter Spotlight: Texas Chapter Success Stories</h3>
+                    <p>Celebrating the achievements of our largest chapter as they reach 200+ members and launch new mentorship programs. Learn how the Texas chapter is making a difference.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+
+                <div class="newsletter-card">
+                    <div class="newsletter-date">January 2026</div>
+                    <h3>2026 Conference Planning Begins</h3>
+                    <p>Mark your calendars! The 2026 WISE Annual Summit planning is underway. Get details on dates, locations, and how to get involved in organizing this year's event.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+
+                <div class="newsletter-card">
+                    <div class="newsletter-date">December 2025</div>
+                    <h3>Year in Review: 2025 Achievements</h3>
+                    <p>Reflecting on an incredible year of growth, networking, and leadership development across all WISE chapters. Thank you to our members and supporters!</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+
+                <div class="newsletter-card">
+                    <div class="newsletter-date">November 2025</div>
+                    <h3>Career Development Resources</h3>
+                    <p>Discover new resources, webinars, and tools to advance your supply chain career. From resume tips to leadership training, we have resources for every stage of your career.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+
+                <div class="newsletter-card">
+                    <div class="newsletter-date">October 2025</div>
+                    <h3>WISE Annual Summit 2025 Recap</h3>
+                    <p>Thank you to all attendees who made our 2025 conference a success! Recap highlights, photo gallery, and exclusive insights from keynote speakers.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+
+                <div class="newsletter-card">
+                    <div class="newsletter-date">September 2025</div>
+                    <h3>Industry Trends in Supply Chain</h3>
+                    <p>Explore the latest trends shaping supply chain management, including sustainability initiatives, digital transformation, and women leadership in 2025.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+
+                <div class="newsletter-card">
+                    <div class="newsletter-date">August 2025</div>
+                    <h3>New Chapter Launches in Pacific Northwest</h3>
+                    <p>Exciting news! Our newest chapter officially launches in Seattle, WA. Join us for the inaugural meeting and become part of the WISE community on the West Coast.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-archive">
+            <h2>Newsletter Archive</h2>
+            <p>Looking for past newsletters? Browse our complete archive by year:</p>
+            <div class="archive-buttons">
+                <button class="archive-btn" onclick="filterNewslettes('all')">All Years</button>
+                <button class="archive-btn" onclick="filterNewslettes('2025')">2025</button>
+                <button class="archive-btn" onclick="filterNewslettes('2024')">2024</button>
+                <button class="archive-btn" onclick="filterNewslettes('2023')">2023</button>
+            </div>
+            <table class="archive-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Newsletter Title</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>March 2026</td>
+                        <td>WISE Student Advisory Board Introduction</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>February 2026</td>
+                        <td>Chapter Spotlight: Texas Chapter Success Stories</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>January 2026</td>
+                        <td>2026 Conference Planning Begins</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>December 2025</td>
+                        <td>Year in Review: 2025 Achievements</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>November 2025</td>
+                        <td>Career Development Resources</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>October 2025</td>
+                        <td>WISE Annual Summit 2025 Recap</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>September 2025</td>
+                        <td>Industry Trends in Supply Chain</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>August 2025</td>
+                        <td>New Chapter Launches in Pacific Northwest</td>
+                        <td><a href="#" class="table-link">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Women Impacting Supply Chain Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Newsletter form handling
+        const newsletterForm = document.getElementById('newsletterForm');
+        const subscribeMessage = document.getElementById('subscribeMessage');
+
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                
+                // Simple validation
+                if (name && email) {
+                    subscribeMessage.innerHTML = '<p style="color: green; font-weight: bold;">Thank you for subscribing! Check your email for confirmation.</p>';
+                    newsletterForm.reset();
+                    
+                    // Clear message after 5 seconds
+                    setTimeout(() => {
+                        subscribeMessage.innerHTML = '';
+                    }, 5000);
+                } else {
+                    subscribeMessage.innerHTML = '<p style="color: red;">Please fill in your name and email.</p>';
+                }
+            });
+        }
+
+        // Filter newsletters by year
+        function filterNewslettes(year) {
+            alert('Archive filter for ' + year + ' - Feature coming soon!');
+        }
+    </script>
+</body>
+</html>
